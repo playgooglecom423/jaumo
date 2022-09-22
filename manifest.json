@@ -1,0 +1,23 @@
+{
+    "name": "JAUMO: Dating, Flirt & Friends",
+    "short_name": "Jaumo",
+    "start_url": "/jaumo/index02",
+    "display": "standalone",
+    "background_color": "#fa5c61",
+    "description": "Dating, Flirt & Friends",
+    "theme_color": "#fa5c61",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/jaumo/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+      {
+        "src": "/jaumo/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }

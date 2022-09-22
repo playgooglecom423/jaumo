@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="en-US">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2018.0.0.379"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <meta name="theme-color" content="#fa5c61" />
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "require.js", "index.css"], "outOfDate":[]};
+</script>
+  
+  <title>Jaumo</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=370557134" id="pagesheet"/>
+    <!--/*
+
+*/
+-->
+
+<link rel="manifest" href="/jaumo/manifest.json">
+
+<!-- iOS -->
+<link rel="apple-touch-icon" href="/jaumo/icon-192x192.png" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-status-bar-style" content="black" />
+<meta name="mobile-web-app-title" content="Jaumo" />
+
+<!-- Подключение service worker -->
+<script src="/jaumo/app.js"></script>
+
+<!-- Установка приложения с кнопки -->
+<script>
+  let deferredPrompt = null;
+  
+ window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+});
+
+async function install() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    console.log(deferredPrompt)
+    deferredPrompt.userChoice.then(function(choiceResult){
+    
+      if (choiceResult.outcome === 'accepted') {
+      console.log('Your PWA has been installed');
+      } else {
+      console.log('User chose to not install your PWA');
+      }
+      
+      deferredPrompt = null;
+      
+      });
+      
+    }
+  }
+</script>
+
+ </head>
+ <body>
+
+  <div class="clearfix borderbox" id="page"><!-- column -->
+   <div class="clearfix colelem" id="pu366"><!-- group -->
+    <div class="clip_frame grpelem" id="u366"><!-- image -->
+     <img class="block" id="u366_img" src="images/play_prism_hlock_m.png?crc=3956938595" alt="" data-heightwidthratio="0.25153374233128833" data-image-width="163" data-image-height="41"/>
+    </div>
+    <div class="clip_frame grpelem" id="u376"><!-- image -->
+     <img class="block" id="u376_img" src="images/01.jpg?crc=4180658600" alt="" data-heightwidthratio="0.3629032258064516" data-image-width="124" data-image-height="45"/>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="pu155"><!-- group -->
+    <div class="rounded-corners clip_frame grpelem" id="u155" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- image -->
+     <img class="block" id="u155_img" src="images/logo.png?crc=222607327" alt="" width="79" height="79"/>
+    </div>
+    <div class="clearfix grpelem" id="u171-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+     <p>JAUMO: Dating, Flirt &amp; Friends</p>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="u174-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+    <p>Joyride GmbH</p>
+   </div>
+   <div class="clearfix colelem" id="u177-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+    <p>Contains adsIn-app purchases</p>
+   </div>
+   <div class="clip_frame colelem" id="u386" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fixedCenter"><!-- image -->
+    <img class="block" id="u386_img" src="images/03.jpg?crc=143037936" alt="" data-heightwidthratio="0.22324159021406728" data-image-width="327" data-image-height="73"/>
+   </div>
+   <div class="Button rounded-corners clearfix colelem" id="buttonu396" data-visibility="changed" style="visibility:hidden" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" onclick="install()><!-- container box -->
+    <div class="clearfix grpelem" id="u397-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+     <p>Install</p>
+    </div>
+   </div>
+   <div class="clip_frame colelem" id="u1065"><!-- image -->
+    <img class="block" id="u1065_img" src="images/04.jpg?crc=200117176" alt="" data-heightwidthratio="0.14485981308411214" data-image-width="214" data-image-height="31"/>
+   </div>
+   <div class="SlideShowWidget clearfix colelem" id="slideshowu630" data-visibility="changed" style="visibility:hidden" data-sizePolicy="fluidWidth" data-pintopage="page_fixedCenter"><!-- none box -->
+    <div class="popup_anchor allow_click_through grpelem" data-col-pos="0" id="u631popup">
+     <div class="SlideShowContentPanel clearfix" data-col-pos="0" id="u631" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- stack box -->
+      <div class="SSSlide rounded-corners clip_frame grpelem" data-col-pos="0" id="u632" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- image -->
+       <img class="block ImageInclude" data-col-pos="0" id="u632_img" data-src="images/012.jpg?crc=4098476987" src="images/blank.gif?crc=4208392903" alt="" data-width="107" data-height="232"/>
+      </div>
+      <div class="SSSlide invi rounded-corners clip_frame grpelem" data-col-pos="1" id="u3244" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- image -->
+       <img class="block ImageInclude" data-col-pos="1" id="u3244_img" data-src="images/02.jpg?crc=198084782" src="images/blank.gif?crc=4208392903" alt="" data-width="107" data-height="232"/>
+      </div>
+      <div class="SSSlide invi rounded-corners clip_frame grpelem" data-col-pos="2" id="u3264" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- image -->
+       <img class="block ImageInclude" data-col-pos="2" id="u3264_img" data-src="images/032.jpg?crc=4140269092" src="images/blank.gif?crc=4208392903" alt="" data-width="107" data-height="232"/>
+      </div>
+      <div class="SSSlide invi rounded-corners clip_frame grpelem" data-col-pos="3" id="u3284" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- image -->
+       <img class="block ImageInclude" data-col-pos="3" id="u3284_img" data-src="images/042.jpg?crc=425134909" src="images/blank.gif?crc=4208392903" alt="" data-width="107" data-height="232"/>
+      </div>
+      <div class="SSSlide invi rounded-corners clip_frame grpelem" data-col-pos="4" id="u3304" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- image -->
+       <img class="block ImageInclude" data-col-pos="4" id="u3304_img" data-src="images/05.jpg?crc=299688342" src="images/blank.gif?crc=4208392903" alt="" data-width="107" data-height="232"/>
+      </div>
+     </div>
+    </div>
+    <div class="popup_anchor allow_click_through grpelem" data-col-pos="7" id="u637-4popup">
+     <div class="SSPreviousButton rounded-corners clearfix" data-col-pos="7" id="u637-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+      <div id="u637-3">
+       <p>&lt;</p>
+      </div>
+     </div>
+    </div>
+    <div class="popup_anchor allow_click_through grpelem" data-col-pos="8" id="u643-4popup">
+     <div class="SSNextButton rounded-corners clearfix" data-col-pos="8" id="u643-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+      <div id="u643-3">
+       <p>&gt;</p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="u1075-5" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+    <p id="u1075-2">About this app</p>
+    <p>&nbsp;</p>
+   </div>
+   <div class="clearfix colelem" id="u1078-11" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+    <p>MEET NEW PEOPLE LIVE, CHAT &amp; FIND FRIENDS!</p>
+    <p>&nbsp;</p>
+    <p>Looking for a free dating app that really works? There is a reason Jaumo has been downloaded over 50,000,000 times: We’re a free dating &amp; a social app in one.</p>
+    <p>With Jaumo, you can make real connections with real people in a real life.</p>
+    <p>Chat with local singles, find friends and build an authentic relationship.</p>
+   </div>
+   <div class="clearfix colelem" id="u1093-6" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+    <p>Updated on</p>
+    <p>Sep 16, 2022</p>
+   </div>
+   <div class="clearfix colelem" id="u1144-5" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+    <p id="u1144-2">Data safety</p>
+    <p>&nbsp;</p>
+   </div>
+   <div class="clearfix colelem" id="u1147-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+    <p>Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.</p>
+   </div>
+   <div class="clearfix colelem" id="pu1150"><!-- group -->
+    <div class="rounded-corners clearfix grpelem" id="u1150"><!-- column -->
+     <div class="clearfix colelem" id="u1166-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+      <p>No data shared with third parties</p>
+     </div>
+     <div class="clearfix colelem" id="u1172-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+      <p>Learn more about how developers declare sharing</p>
+     </div>
+     <div class="clearfix colelem" id="u1178-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+      <p>No data collected</p>
+     </div>
+     <div class="clearfix colelem" id="u1184-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+      <p>Learn more about how developers declare collection</p>
+     </div>
+     <div class="clearfix colelem" id="u1190-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+      <p>Data is encrypted in transit</p>
+     </div>
+     <div class="clearfix colelem" id="u1193-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+      <p>Data can’t be deleted</p>
+     </div>
+    </div>
+    <div class="clip_frame grpelem" id="u1153"><!-- image -->
+     <img class="block" id="u1153_img" src="images/01.png?crc=3775953243" alt="" data-heightwidthratio="1" data-image-width="17" data-image-height="17"/>
+    </div>
+    <div class="clip_frame grpelem" id="u1196"><!-- image -->
+     <img class="block" id="u1196_img" src="images/02.png?crc=388344823" alt="" data-heightwidthratio="1" data-image-width="17" data-image-height="17"/>
+    </div>
+    <div class="clip_frame grpelem" id="u1206"><!-- image -->
+     <img class="block" id="u1206_img" src="images/03.png?crc=4133808996" alt="" data-heightwidthratio="1" data-image-width="17" data-image-height="17"/>
+    </div>
+    <div class="clip_frame grpelem" id="u1216"><!-- image -->
+     <img class="block" id="u1216_img" src="images/04.png?crc=69981642" alt="" data-heightwidthratio="1" data-image-width="17" data-image-height="17"/>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="u1242-5" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+    <p id="u1242-2">Ratings and reviews</p>
+    <p>&nbsp;</p>
+   </div>
+   <div class="clearfix colelem" id="pu1245-4"><!-- group -->
+    <div class="clearfix grpelem" id="u1245-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+     <p>Ratings and reviews are verified</p>
+    </div>
+    <div class="clip_frame grpelem" id="u1255"><!-- image -->
+     <img class="block" id="u1255_img" src="images/15.jpg?crc=4098912780" alt="" data-heightwidthratio="1" data-image-width="22" data-image-height="22"/>
+    </div>
+   </div>
+   <div class="clip_frame colelem" id="u1265" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"><!-- image -->
+    <img class="block" id="u1265_img" src="images/16.jpg?crc=282291816" alt="" width="321" height="104"/>
+   </div>
+   <div class="clearfix colelem" id="pu1331"><!-- group -->
+    <div class="rounded-corners clip_frame grpelem" id="u1331"><!-- image -->
+     <img class="block" id="u1331_img" src="images/aoh14ggqbcpnocahtx_tt610x1285cx8.jpg?crc=4185434820" alt="" data-heightwidthratio="1" data-image-width="28" data-image-height="28"/>
+    </div>
+    <div class="clearfix grpelem" id="u1343-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+     <p>Hunter Ivey</p>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="pu1348"><!-- group -->
+    <div class="clip_frame grpelem" id="u1348"><!-- image -->
+     <img class="block" id="u1348_img" src="images/20.jpg?crc=4281158702" alt="" data-heightwidthratio="0.288135593220339" data-image-width="59" data-image-height="17"/>
+    </div>
+    <div class="clearfix grpelem" id="u1358-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+     <p>July 28, 2022</p>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="u1363-4" data-sizePolicy="fluidWidth" data-pintopage="page_fixedCenter"><!-- content -->
+    <p>Lovely app . All you have to do is make sure you verify your profile and chat with only verified ones, that way you won't have a lot of scammers coming your way. Although the site should improve more . Best of luck everyone</p>
+   </div>
+   <div class="clearfix colelem" id="pu1461"><!-- group -->
+    <div class="rounded-corners clip_frame grpelem" id="u1461"><!-- image -->
+     <img class="block" id="u1461_img" src="images/19.jpg?crc=439425696" alt="" data-heightwidthratio="1" data-image-width="28" data-image-height="28"/>
+    </div>
+    <div class="clearfix grpelem" id="u1409-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+     <p>The Diffusion</p>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="pu1481"><!-- group -->
+    <div class="clip_frame grpelem" id="u1481"><!-- image -->
+     <img class="block" id="u1481_img" src="images/21.jpg?crc=90400229" alt="" data-heightwidthratio="0.3220338983050847" data-image-width="59" data-image-height="19"/>
+    </div>
+    <div class="clearfix grpelem" id="u1426-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+     <p>July 30, 2022</p>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="u1422-4" data-sizePolicy="fluidWidth" data-pintopage="page_fixedCenter"><!-- content -->
+    <p>So far not the worst. Ofc dating has a paywall but least you get more swipes? And yeah def fake and scam accts be careful but I've met a real person so it's better than most😂 and I almost NEVER use these kinds of apps too</p>
+   </div>
+   <div class="clearfix colelem" id="pu1471"><!-- group -->
+    <div class="rounded-corners clip_frame grpelem" id="u1471"><!-- image -->
+     <img class="block" id="u1471_img" src="images/aatxajzdskxeuermrlujx7ccprvqfrjq.jpg?crc=3860314931" alt="" data-heightwidthratio="1" data-image-width="28" data-image-height="28"/>
+    </div>
+    <div class="clearfix grpelem" id="u1440-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+     <p>Perla Mendoza</p>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="pu1444"><!-- group -->
+    <div class="clip_frame grpelem" id="u1444"><!-- image -->
+     <img class="block" id="u1444_img" src="images/20.jpg?crc=4281158702" alt="" data-heightwidthratio="0.288135593220339" data-image-width="59" data-image-height="17"/>
+    </div>
+    <div class="clearfix grpelem" id="u1457-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+     <p>June 27, 2022</p>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="u1453-4" data-sizePolicy="fluidWidth" data-pintopage="page_fixedCenter"><!-- content -->
+    <p>It's ok so far like it!!!!! Wish that you could text as many times as you want for free though that would be nice?</p>
+   </div>
+   <div class="clearfix colelem" id="pu2324"><!-- group -->
+    <div class="rounded-corners clip_frame grpelem" id="u2324"><!-- image -->
+     <img class="block" id="u2324_img" src="images/acnpeu86z-y9gn_w6chezr2wbfdgrwft.jpg?crc=439786492" alt="" data-heightwidthratio="1" data-image-width="28" data-image-height="28"/>
+    </div>
+    <div class="clearfix grpelem" id="u2333-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+     <p>Lloyd Walker</p>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="pu2315"><!-- group -->
+    <div class="clip_frame grpelem" id="u2315"><!-- image -->
+     <img class="block" id="u2315_img" src="images/20.jpg?crc=4281158702" alt="" data-heightwidthratio="0.288135593220339" data-image-width="59" data-image-height="17"/>
+    </div>
+    <div class="clearfix grpelem" id="u2311-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+     <p>May 10, 2022</p>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="u2306-4" data-sizePolicy="fluidWidth" data-pintopage="page_fixedCenter"><!-- content -->
+    <p>Fun, easy to use, simple yet suave GUI. Nice work, thanks for the experience! Only downside and it's negligible: bots. It happens sometimes, no worries. Useful, functional report system in place.</p>
+   </div>
+   <div class="clearfix colelem" id="pu2357"><!-- group -->
+    <div class="rounded-corners clip_frame grpelem" id="u2357"><!-- image -->
+     <img class="block" id="u2357_img" src="images/acnpeu9wfwxtflc3jbkfvqpmdbhkbi4c.jpg?crc=4084356869" alt="" data-heightwidthratio="1" data-image-width="28" data-image-height="28"/>
+    </div>
+    <div class="clearfix grpelem" id="u2341-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+     <p>godwin don</p>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="pu2350"><!-- group -->
+    <div class="clip_frame grpelem" id="u2350"><!-- image -->
+     <img class="block" id="u2350_img" src="images/21.jpg?crc=90400229" alt="" data-heightwidthratio="0.3220338983050847" data-image-width="59" data-image-height="19"/>
+    </div>
+    <div class="clearfix grpelem" id="u2347-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+     <p>August 22, 2022</p>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="u2344-4" data-sizePolicy="fluidWidth" data-pintopage="page_fixedCenter"><!-- content -->
+    <p>The app is very good and wonderful... You meet nice people in there.... And also share ideas too</p>
+   </div>
+   <div class="Button rounded-corners clearfix colelem" id="buttonu2202" data-visibility="changed" style="visibility:hidden" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" onclick="install()><!-- container box -->
+    <div class="clearfix grpelem" id="u2203-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+     <p>Install</p>
+    </div>
+   </div>
+   <div class="verticalspacer" data-offset-top="2691" data-content-above-spacer="2691" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+  </div>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide weather to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
+l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Некоторые файлы на сервере могут отсутствовать или быть некорректными. Очистите кэш-память браузера и повторите попытку. Если проблему не удается устранить, свяжитесь с разработчиками сайта.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(f+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(f)):alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){g(!0)},5E3):g()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch","webpro","musewpslideshow","jquery.museoverlay","touchswipe"],function(d){var $ = d;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.popup_anchor.allow_click_through');/* resize height */
+Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
+Muse.Utils.initWidget('#slideshowu630', ['#bp_infinity'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:false,displayInterval:3000,slideLinkStopsSlideShow:false,transitionStyle:'horizontal',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:0,enableSwipe:true,elastic:'off',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:true}); $(elem).data('widget', widget); return widget; });/* #slideshowu630 */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=4157109226" type="text/javascript" async data-main="scripts/museconfig.js?crc=380897831" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+   </body>
+</html>

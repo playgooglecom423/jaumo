@@ -1,0 +1,103 @@
+<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="https://playgooglecom423.github.io/jaumo" resolutions="1x" timestamp="1663861070035">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="index.css" crc="370557134" ref="index"/>
+  </folder>
+  <folder name="fonts">
+    <file name="productsansbold.woff" crc="4073882580"/>
+    <file name="productsansbold.eot" crc="3762804211"/>
+    <file name="productsansbold.svg" crc="4243960317"/>
+    <file name="productsansregular.woff" crc="4254066433"/>
+    <file name="productsansregular.eot" crc="3933691702"/>
+    <file name="productsansregular.svg" crc="4226781279"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="3803043152" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="380897831" ref="index"/>
+    <file name="jquery.watch.js" crc="99325471" ref="index"/>
+    <file name="webpro.js" crc="242022427" ref="index"/>
+    <file name="musewpslideshow.js" crc="457073769" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="483674903" ref="index"/>
+    <file name="touchswipe.js" crc="4066113679" ref="index"/>
+    <file name="require.js" crc="4157109226" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="play_prism_hlock_m.png" crc="3956938595" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="01.jpg" crc="4180658600" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="logo.png" crc="222607327" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="03.jpg" crc="143037936" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="04.jpg" crc="200117176" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="012.jpg" crc="4098476987" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="02.jpg" crc="198084782" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="032.jpg" crc="4140269092" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="042.jpg" crc="425134909" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="05.jpg" crc="299688342" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="01.png" crc="3775953243" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="02.png" crc="388344823" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="03.png" crc="4133808996" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="04.png" crc="69981642" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="15.jpg" crc="4098912780" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="16.jpg" crc="282291816" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="aoh14ggqbcpnocahtx_tt610x1285cx8.jpg" crc="4185434820" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="20.jpg" crc="4281158702" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="19.jpg" crc="439425696" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="21.jpg" crc="90400229" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="aatxajzdskxeuermrlujx7ccprvqfrjq.jpg" crc="3860314931" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="acnpeu86z-y9gn_w6chezr2wbfdgrwft.jpg" crc="439786492" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="acnpeu9wfwxtflc3jbkfvqpmdbhkbi4c.jpg" crc="4084356869" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="133372443" seo="true" mt="1663860988578" redirect="true"/>
+</manifest>
