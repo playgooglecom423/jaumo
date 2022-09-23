@@ -84,6 +84,29 @@ function doFunction() { // функция привязанная к клику �
   alert('I was pressed!');
 }
     </script>
+  
+  
+<br>
+  <br>
+  <br>
+<button id="btn-click1" onclick="doFunction();">Вторая кнопка сообщение</button>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() { // когда весь HTML загружен
+
+  setTimeout(function() { // таймер-планировщик
+    document.getElementById('btn-click1').click(); // вызвать клик на кнопку
+  }, 5000); // через две секунды
+
+});
+
+
+function doFunction() { // функция привязанная к клику на кнопку
+  alert('I was pressed!');
+}
+    </script>
+  <br>
+  <br>
+  <br>
 
   <button type="button" name="show_more" id="button" onclick="install()">Установить приложение</button>
   
