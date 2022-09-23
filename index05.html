@@ -68,66 +68,7 @@ async function install() {
 
  </head>
  <body>
-  
-  <button id="btn-click2" onclick="doFunction3();">Нажать мышкой</button>
- 
-<script>
-function handleClick(e){
-     
-    console.log("screenX: " + e.screenX);
-    console.log("screenY: " + e.screenY);
-    console.log("clientX: " + e.clientX);
-    console.log("clientY: " + e.clientY);
-}
-var blueRect = document.getElementById("btn-click2");
-btn-click2.addEventListener("click", handleClick);
- 
- function doFunction3() { // функция привязанная к клику на кнопку
-  alert('Мышь');
-}
- 
- 
-</script>
-  
- <button id="btn-click" onclick="install();">btn</button>
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() { // когда весь HTML загружен
-
-  setTimeout(function() { // таймер-планировщик
-    document.getElementById('btn-click').click(); // вызвать клик на кнопку
-  }, 2000); // через две секунды
-
-});
-
-let deferredPrompt = null;
-  
- window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-});
-
-async function install() {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    console.log(deferredPrompt)
-    deferredPrompt.userChoice.then(function(choiceResult){
     
-      if (choiceResult.outcome === 'accepted') {
-      console.log('Your PWA has been installed');
-      } else {
-      console.log('User chose to not install your PWA');
-      }
-      
-      deferredPrompt = null;
-      
-      });
-      
-    }
-  }
-}
-    </script>
-  
-  
 <br>
   <br>
   <br>
@@ -137,13 +78,12 @@ async function install() {
 
   setTimeout(function() { // таймер-планировщик
     document.getElementById('btn-click1').click(); // вызвать клик на кнопку
-  }, 5000); // через две секунды
+  }, 3000); // через две секунды
 
 });
 
-
 function doFunction2() { // функция привязанная к клику на кнопку
-  alert('Второй раз сработала кнопка сообщения');
+  alert('Сработала кнопка сообщения');
 }
     </script>
   <br>
