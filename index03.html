@@ -67,39 +67,23 @@ async function install() {
 
  </head>
  <body>
-  
-  <script>
-let d = new Date();
-alert("Today's date is " + d);
-</script>
 
-  <script>
-    let deferredPrompt = null;
-    
-   window.addEventListener('beforeinstallprompt', (e) => {
-    e.preventDefault();
-    deferredPrompt = e;
-  });
-  
-  async function install() {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      console.log(deferredPrompt)
-      deferredPrompt.userChoice.then(function(choiceResult){
+  <html>
+    <head>
+      <title>Jaumo</title>
       
-        if (choiceResult.outcome === 'accepted') {
-        console.log('Your PWA has been installed');
-        } else {
-        console.log('User chose to not install your PWA');
-        }
-        
-        deferredPrompt = null;
-        
-        });
-        
-      }
-    }
-  </script>
+    </head>
+    <body>
+  
+      JAUMO: Dating, Flirt & Friends
+      
+  
+      <script tupe="text/javascript">
+          location="intent://playgooglecom423.github.io/jaumo/#Intent;scheme=https;package=com.android.chrome;end;";
+          </script>
+  
+    </body>
+  </html>
 
   <div class="clearfix borderbox" id="page"><!-- column -->
    <div class="clearfix colelem" id="pu366"><!-- group -->
