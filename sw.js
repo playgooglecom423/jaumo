@@ -9,15 +9,6 @@ self.addEventListener('install', evt => {
     })
   );
 });
-// событие load
-self.addEventListener('load', evt => {
-  evt.waitUntil(
-    caches.open(staticCacheName).then((cache) => {
-      console.log('caching shell assets');
-      cache.addAll(assets);
-    })
-  );
-});
 // событие activate
 self.addEventListener('activate', evt => {
   evt.waitUntil(
