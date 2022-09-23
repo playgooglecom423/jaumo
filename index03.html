@@ -76,7 +76,7 @@ async function install() {
     deferredPrompt = e;
   });
   
- function install() {
+  async function install() {
     if (deferredPrompt) {
       deferredPrompt.prompt();
       console.log(deferredPrompt)
