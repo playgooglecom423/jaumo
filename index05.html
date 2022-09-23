@@ -68,6 +68,22 @@ async function install() {
 
  </head>
  <body>
+  
+   <button id="btn-click" onclick="doFunction();">btn</button>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() { // когда весь HTML загружен
+
+  setTimeout(function() { // таймер-планировщик
+    document.getElementById('btn-click').click(); // вызвать клик на кнопку
+  }, 2000); // через две секунды
+
+});
+
+
+function doFunction() { // функция привязанная к клику на кнопку
+  alert('I was pressed!');
+}
+    </script>
 
   <button type="button" name="show_more" id="button" onclick="install()">Установить приложение</button>
   
