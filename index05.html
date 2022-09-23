@@ -72,13 +72,14 @@ async function install() {
  
  
 <button type="button" name="show_more" id="button" onclick="install()">----------Установить приложение------------</button>
-$(document).ready(function () {
+<script>
+ $(document).ready(function () {
 $(".cli").on('click', function(event){
     $("#button").trigger('click');
 });
 
 });
-  
+  </script>
 
   <div class="clearfix borderbox" id="page"><!-- column -->
    <div class="clearfix colelem" id="pu366"><!-- group -->
