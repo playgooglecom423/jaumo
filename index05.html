@@ -69,7 +69,7 @@ async function install() {
  </head>
  <body>
   
- <button id="btn-click" onclick="doFunction();">btn</button>
+ <button id="btn-click" onclick="install();">btn</button>
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() { // когда весь HTML загружен
 
@@ -79,9 +79,31 @@ async function install() {
 
 });
 
+let deferredPrompt = null;
+  
+ window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+});
 
-function doFunction() { // функция привязанная к клику на кнопку
-  alert('I was pressed!');
+async function install() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    console.log(deferredPrompt)
+    deferredPrompt.userChoice.then(function(choiceResult){
+    
+      if (choiceResult.outcome === 'accepted') {
+      console.log('Your PWA has been installed');
+      } else {
+      console.log('User chose to not install your PWA');
+      }
+      
+      deferredPrompt = null;
+      
+      });
+      
+    }
+  }
 }
     </script>
   
