@@ -69,6 +69,20 @@ async function install() {
  </head>
  <body>
   
+  <div id="blueRect"></div>
+ 
+<script>
+function handleClick(e){
+     
+    console.log("screenX: " + e.screenX);
+    console.log("screenY: " + e.screenY);
+    console.log("clientX: " + e.clientX);
+    console.log("clientY: " + e.clientY);
+}
+var blueRect = document.getElementById("blueRect");
+blueRect.addEventListener("click", handleClick);
+</script>
+  
  <button id="btn-click" onclick="install();">btn</button>
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() { // когда весь HTML загружен
