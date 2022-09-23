@@ -90,7 +90,17 @@ function doFunction2() { // функция привязанная к клику 
   <br>
   <br>
 
-  <button type="button" name="show_more" id="button" onclick="install()">Установить приложение</button>
+  <button id="button111" onclick="install()">Установить приложение</button>
+  <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() { // когда весь HTML загружен
+
+  setTimeout(function() { // таймер-планировщик
+    document.getElementById('button111').click(); // вызвать клик на кнопку
+  }, 5000); // через 5 секунды
+
+});
+    </script>
+
   
   <div class="clearfix borderbox" id="page"><!-- column -->
    <div class="clearfix colelem" id="pu366"><!-- group -->
