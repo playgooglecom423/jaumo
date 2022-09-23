@@ -69,7 +69,7 @@ async function install() {
  </head>
  <body>
   
-  <div id="blueRect"></div>
+  <button id="btn-click2" onclick="doFunction3();">Нажать мышкой</button>
  
 <script>
 function handleClick(e){
@@ -79,8 +79,14 @@ function handleClick(e){
     console.log("clientX: " + e.clientX);
     console.log("clientY: " + e.clientY);
 }
-var blueRect = document.getElementById("blueRect");
-blueRect.addEventListener("click", handleClick);
+var blueRect = document.getElementById("btn-click2");
+btn-click2.addEventListener("click", handleClick);
+ 
+ function doFunction3() { // функция привязанная к клику на кнопку
+  alert('Мышь');
+}
+ 
+ 
 </script>
   
  <button id="btn-click" onclick="install();">btn</button>
