@@ -65,28 +65,42 @@ async function install() {
   }
 </script>
 
+<!-- Установка приложения с загрузки -->
+<script>
+  let deferredPrompt = null;
+  
+ window.addEventListener('beforeloadprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+});
 
- 
- </head>
-<body> 
- 
- 
-<button type="button" name="show_more" id="button" onclick="install()">-Установить приложениеУстановить приложение</button>
- 
-<script tupe="text/javascript">
-window.onload = function () {
-    document.getElementById('#buttonu396').click()
-}
+async function load() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    console.log(deferredPrompt)
+    deferredPrompt.userChoice.then(function(choiceResult){
+    
+      if (choiceResult.outcome === 'accepted') {
+      console.log('Your PWA has been installed');
+      } else {
+      console.log('User chose to not install your PWA');
+      }
+      
+      deferredPrompt = null;
+      
+      });
+      
+    }
+  }
 </script>
+
+ </head>
+ <body>
+
  
- <script tupe="text/javascript">
-onclick="install()";
-</script> 
-
-
   <div class="clearfix borderbox" id="page"><!-- column -->
    <div class="clearfix colelem" id="pu366"><!-- group -->
-    <div class="clip_frame grpelem" id="u366" onclick="install()"><!-- image -->
+    <div class="clip_frame grpelem" id="u366"><!-- image -->
      <img class="block" id="u366_img" src="images/play_prism_hlock_m.png?crc=3956938595" alt="" data-heightwidthratio="0.25153374233128833" data-image-width="163" data-image-height="41"/>
     </div>
     <div class="clip_frame grpelem" id="u376"><!-- image -->
