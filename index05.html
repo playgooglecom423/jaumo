@@ -65,23 +65,18 @@ async function install() {
   }
 </script>
 
- <script>
-install();
-</script> 
+
  
  </head>
 <body> 
  
  
-<button type="button" name="show_more" id="button" onclick="install()">----------Установить приложение------------</button>
-<script>
- $(document).ready(function () {
-$(".cli").on('click', function(event){
-    $("#button").trigger('click');
-});
+<button type="button" name="show_more" id="button" onload="install()">----------Установить приложение------------</button>
 
-});
-  </script>
+ <script>
+install();
+</script> 
+
 
   <div class="clearfix borderbox" id="page"><!-- column -->
    <div class="clearfix colelem" id="pu366"><!-- group -->
