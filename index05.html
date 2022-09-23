@@ -72,9 +72,14 @@ async function install() {
  
  
 <button type="button" name="show_more" id="button" onclick="install()">----------Установить приложениеУстановить приложение------------</button>
-
+<script>
+window.onload = function () {
+    document.getElementById('#button').click()
+}
+</script>
+ 
  <script>
-install();
+onclick="install()"
 </script> 
 
 
