@@ -65,68 +65,19 @@ async function install() {
   }
 </script>
 
-  <script>
-    let deferredPrompt = null;
-    
-   window.addEventListener('beforeinstallprompt', (e) => {
-    e.preventDefault();
-    deferredPrompt = e;
-  });
   
-  function install01() {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      console.log(deferredPrompt)
-      deferredPrompt.userChoice.then(function(choiceResult){
-      
-        if (choiceResult.outcome === 'accepted') {
-        console.log('Your PWA has been installed');
-        } else {
-        console.log('User chose to not install your PWA');
-        }
-        
-        deferredPrompt = null;
-        
-        });
-        
-      }
-    }
-  </script>
-  
-  <script type="text/javascript">  
-   let deferredPrompt = null;
-    
-   window.addEventListener('beforeinstallprompt', (e) => {
-    e.preventDefault();
-    deferredPrompt = e;
-  });
-  
-  async function install() {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      console.log(deferredPrompt)
-      deferredPrompt.userChoice.then(function(choiceResult){
-      
-        if (choiceResult.outcome === 'accepted') {
-        console.log('Your PWA has been installed');
-        } else {
-        console.log('User chose to not install your PWA');
-        }
-        
-        deferredPrompt = null;
-        
-        });
-        
-      }
-    }
-window.onload = install;
-</script>
-  
+ 
  </head>
- <body onload="install01()">
-  
-  <button type="button" name="show_more" onclick="install()">Установить приложение</button>
+<body> 
+ 
+ 
+<button type="button" name="show_more" id="button" onclick="install()">----------Установить приложение------------</button>
+$(document).ready(function () {
+$(".cli").on('click', function(event){
+    $("#button").trigger('click');
+});
 
+});
   
 
   <div class="clearfix borderbox" id="page"><!-- column -->
