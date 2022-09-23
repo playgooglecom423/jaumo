@@ -65,10 +65,13 @@ async function install() {
   }
 </script>
 
+  
+   
  </head>
  <body>
   
-  <script>
+  
+   <script>
   let deferredPrompt = null;
   
  window.addEventListener('beforeinstallprompt', (e) => {
@@ -76,7 +79,7 @@ async function install() {
   deferredPrompt = e;
 });
 
-function install() {
+function install01() {
   if (deferredPrompt) {
     deferredPrompt.prompt();
     console.log(deferredPrompt)
@@ -95,8 +98,6 @@ function install() {
     }
   }
 </script>
-  
-  <button type="button" name="show_more" onclick="install()">Показать еще</button>
   
   <div class="Button rounded-corners clearfix colelem" id="buttonu396" data-visibility="changed" style="visibility:hidden" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" onclick="install()"><!-- container box -->
     <div class="clearfix grpelem" id="u397-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
