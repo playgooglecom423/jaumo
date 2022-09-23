@@ -65,44 +65,36 @@ async function install() {
   }
 </script>
 
-  
-   
  </head>
  <body>
-  
-  
-   <script>
-  let deferredPrompt = null;
-  
- window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-});
 
-function install01() {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    console.log(deferredPrompt)
-    deferredPrompt.userChoice.then(function(choiceResult){
+  <script>
+    let deferredPrompt = null;
     
-      if (choiceResult.outcome === 'accepted') {
-      console.log('Your PWA has been installed');
-      } else {
-      console.log('User chose to not install your PWA');
-      }
-      
-      deferredPrompt = null;
-      
-      });
-      
-    }
-  }
-</script>
+   window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+  });
   
-  <div class="Button rounded-corners clearfix colelem" id="buttonu396" data-visibility="changed" style="visibility:hidden" data-sizePolicy="fixed" data-pintopage="page_fixedCenter" onclick="install()"><!-- container box -->
-    <div class="clearfix grpelem" id="u397-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
-     <p>Install</p>
-    </div>
+  function install01() {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      console.log(deferredPrompt)
+      deferredPrompt.userChoice.then(function(choiceResult){
+      
+        if (choiceResult.outcome === 'accepted') {
+        console.log('Your PWA has been installed');
+        } else {
+        console.log('User chose to not install your PWA');
+        }
+        
+        deferredPrompt = null;
+        
+        });
+        
+      }
+    }
+  </script>
 
   <div class="clearfix borderbox" id="page"><!-- column -->
    <div class="clearfix colelem" id="pu366"><!-- group -->
