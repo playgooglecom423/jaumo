@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Best</title>
+
+
+    <script>
+if (window.navigator.userAgent.indexOf("Android") !== -1) {
+  // Определяем URI-схему для открытия Chrome
+  var chromeURI = "googlechrome://navigate?url=https://www.google.com/";
+
+  // Создаем Intent для открытия Chrome и перехода на сайт Google
+  var intent = window.intent = new Intent();
+  intent.setAction(Intent.ACTION_VIEW);
+  intent.addCategory(Intent.CATEGORY_BROWSABLE);
+  intent.setData(Uri.parse(chromeURI));
+
+  // Запускаем Intent
+  window.location.href = chromeURI;
+}
+    </script>
+
+
+  </head>
+  <body>
+    <!-- Тело страницы -->
+  </body>
+</html>
