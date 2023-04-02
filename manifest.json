@@ -1,7 +1,7 @@
 {
     "name": "JAUMO: Dating, Flirt & Friends",
     "short_name": "Jaumo",
-    "start_url": "https://jaumo/index02.html",
+    "start_url": "/jaumo/index02.html",
     "display": "standalone",
     "background_color": "#fa5c61",
     "description": "Dating, Flirt & Friends",
